@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stick&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: #8e634f;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23aeabb2' fill-opacity='0.86'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-family: "Shippori Mincho B1", serif;
+  color: #a9a1a4;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+h1 {
+  font-size: 8rem;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+  margin-top: 20px;
+}
+
+.quote-container {
+  background-color: #a9a1a4;
+  backdrop-filter: blur(0.2rem);
+  color: #000;
+  max-width: 900px;
+  font-size: 3rem;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  min-height: 25rem;
+}
+
+.author-container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.author-container img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.author {
+  position: relative;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: right;
+  height: 100px;
+  width: auto;
+  min-width: 200px;
+  color: #000;
+  text-shadow: 0 0 1px black;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Stick", sans-serif;
+  padding: 0 30px;
+  font-size: 3.3rem;
+  box-sizing: content-box;
+}
+
+.button-container {
+  height: 70px;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.button {
+  height: 40px;
+  width: auto;
+  min-width: 50px;
+  padding: 0.5rem;
+  box-shadow: 0 0.3rem rgb(133, 132, 132);
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgb(0, 0, 0);
+  font-weight: 700;
+  color: white;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  transform: translateY(0.3rem);
+  box-shadow: 0 0.3rem rgba(231, 176, 140, 0);
+}
+
+.fa-twitter {
+  font-size: 2rem;
+}
+
+.fa-twitter:hover {
+  color: #00acee;
+}
